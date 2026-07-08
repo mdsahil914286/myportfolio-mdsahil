@@ -15,7 +15,7 @@ const About = () => {
     <div className='container mx-auto px-6 items-center'>
         {/* heading */}
       <h2 className='text-3xl md:text-5xl font-bold mb-4 text-center'>About
-         <span className='text-purple-700'>Me</span> </h2>
+         <span className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>Me</span> </h2>
       <p className='text-gray-400 text-center max-w-2xl mx-auto mb-16'>Get to 
         know me better! I'm a passionate web developer with a knack for creating stunning and functional websites.
       </p>
@@ -25,9 +25,9 @@ const About = () => {
        {/* img */}
        <div className='md:1/2 rounded-2xl overflow-hidden ml-20'>
      <motion.img
-       initial={{opacity:0, y:50}}
-    whileInView={{opacity:1, y:0}}
-    transition={{duration: 0.9, ease:'easeout'}}
+       initial={{opacity:0, x:100}}
+    whileInView={{opacity:1, x:0}}
+    transition={{duration: 0.9, ease:'ease-out'}}
     viewport={{once: false, amount:0.2}}
     className='w-500px h-500px object-cover rounded-2xl shadow-lg'
        src={bigimage2} alt='about me' />
@@ -38,7 +38,7 @@ const About = () => {
         < motion.div
            initial={{opacity:0, y:50}}
     whileInView={{opacity:1, y:0}}
-    transition={{duration: 0.9, ease:'easeout'}}
+    transition={{duration: 0.9, ease:'ease-out'}}
     viewport={{once: false, amount:0.2}} className='md:w-1/2'
      >
       <div className='rounded-2xl p-8'>
@@ -52,17 +52,7 @@ const About = () => {
        <p className='text-gray-400 mt-4'>
           I'm excited to continue this journey, exploring new technologies and taking on new challenges in the world of web development. Let's connect and see how we can collaborate on future projects!
         </p> 
-         {/* cards 
-         <div className=' grid-cols-1 md:grid-cols-2 gap-6'>
-          {
-            abInfo.map((data, index) => (
-              <div key={index} className='bg-dark-300 rounded-2xl  p-6 transition-transform duration-300 hover:translate-y-2 cursor-pointer'>
-                <div className='text-purple-500 text-4xl'></div>
-          
-              </div>
-            ))
-          }
-        </div>  */}
+         
       </div>
       
         </motion.div>
