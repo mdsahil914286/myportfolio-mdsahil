@@ -21,7 +21,7 @@ const Skills = () => {
                     <h3 className='text-xl font-semibold mb-4 text-white'>Frontend</h3>
                     <p className='text-gray-400'>
                  <div className='flex flex-wrap justify-center gap-6'>
-                    <div className='flex flex-col items-center hover:border-cyan-400 cursor-pointer rounded-lg p-4 
+                    <div className='flex flex-col items-center  rounded-lg p-4 
    hover:bg-dark-300 
     border-2
     border-transparent
@@ -33,7 +33,7 @@ const Skills = () => {
     focus:ring-cyan-400
     focus:ring-offset-2
     focus:ring-offset-gray-900
-        caret-cyan-400 cursor-pointer '>
+    caret-cyan-400 cursor-pointer '>
                          <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='HTML' className='w-8 h-8 ' />
                          <p className='text-grey-400 mt-2 '>HTML</p>
                     </div>
@@ -194,7 +194,7 @@ const Skills = () => {
     focus:ring-cyan-400
     focus:ring-offset-2
     focus:ring-offset-gray-900
-        caret-cyan-400 cursor-pointer'>
+    caret-cyan-400 cursor-pointer0'>
                                 <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' alt='GitHub' className='w-8 h-8 bg-white ' />
                                 <p className='text-grey-400 mt-2 '>GitHub</p>
                             </div>

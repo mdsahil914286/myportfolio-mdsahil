@@ -7,10 +7,10 @@ function Footer() {
   return (
     
           <motion.div
-          initial={{opacity:0, y:50}}
+          initial={{opacity:0, y:60}}
           whileInView={{opacity:1, y:0}}
           transition={{duration: 0.6, ease:'ease-out'}}
-          viewport={{once: true}}
+          viewport={{once: false, amount:0.2}}
           id = 'Footer'
     className='  bg-dark-200'
           >
@@ -18,7 +18,7 @@ function Footer() {
         <div className='container mx-auto px-6 flex flex-row justify-between gap-8'>
 
           
-          <p className='text-gray-400 text-center flex-1'>© 2023 My Portfolio. All rights reserved.</p>
+          <p className='text-gray-400 text-center flex-1'>© 2023 My Portfolio <span className='font-bold text-amber-50'>Md Sahil</span>. All rights reserved.</p>
 
         
             <button className='px-4 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500  rounded-lg text-white font-medium hover:scale-105 transition-transform duration-300 shadow-lg'>

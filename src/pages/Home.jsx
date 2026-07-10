@@ -1,5 +1,5 @@
 
-import React from 'react'
+import {memo} from 'react'
  import Hero from  '../components/Hero'
  import About from '../components/About'
   import Projects from '../components/Projects'
@@ -8,8 +8,10 @@ import React from 'react'
    import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 
- 
-
+ export const metadata = {
+  title:"my portfolio md sahil ",
+  description:"creata a website and using react.js and tailwind.css",
+ }
 
 
 const Home = () => {
@@ -28,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default memo(Home)

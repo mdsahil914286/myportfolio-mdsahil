@@ -21,7 +21,7 @@ function Work() {
 
     <h2 className="text-4xl font-bold text-center text-white mb-4">
     Development
-      <span className="ml-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <span className="ml-2 min-w-dvw bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         Journey
       </span>
     </h2>
@@ -48,9 +48,9 @@ function Work() {
         </span>
 
         
-        <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent text-md flex justify-center">2023 - 2024</span>
-        <h3 className="text-2xl font-semibold ">
-          The Beginning of My Journey
+        <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent text-md flex justify-center ">2023 - 2024</span>
+        <h3 className="text-2xl font-semibold flex justify-center ">
+          The Beginning 
         </h3>
 
         <p className="text-gray-400 mt-2">
@@ -60,7 +60,7 @@ function Work() {
           <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned C Language fundamentals.
         </p>
          <p className="text-gray-400 mt-2">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned HTML, CSS, and fundamentals.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned HTML, CSS, and javascript.
         </p>
          <p className="text-gray-400 mt-2">
            <Sparkles className="inline-block  text-blue-500 mr-2" /> Built first landing page.
@@ -85,25 +85,25 @@ function Work() {
         <CodeXml   className='w-15 h-15 p-2 flex flex-col justify-center items-center align-center bg-gradient-to-r from-cyan-500 to-indigo-600 border rounded-md'/>
 
         </span>
-          <span className="bg-gradient-to-r from-cyan-500 to-indigo-600 bg-clip-text text-transparent text-md flex justify-center">2024 - 2025</span>
-        <h3 className="text-2xl font-semibold ">
-          The Beginning of My Journey
+          <span className="bg-gradient-to-r from-pink-700 to-blue-600 bg-clip-text text-transparent text-md flex justify-center">2024 - 2025</span>
+        <h3 className="  text-2xl font-semibold flex justify-center  ">
+          Building Foundations
         </h3>
 
         <p className="text-gray-400 mt-2">
-         <Sparkles className="inline-block  text-blue-500 mr-2" /> Started BCA Program.
+         <Sparkles className="inline-block  text-blue-500 mr-2" /> Mastered Javascript.
         </p>
          <p className="text-gray-400 mt-2">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned C Language fundamentals.
+          <Sparkles className="inline-block  text-blue-500 mr-2" /> Started React and tailwind css.
         </p>
          <p className="text-gray-400 mt-2">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned HTML, CSS, and fundamentals.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />  Built responsive websites.
         </p>
          <p className="text-gray-400 mt-2">
-           <Sparkles className="inline-block  text-blue-500 mr-2" /> Built first landing page.
+           <Sparkles className="inline-block  text-blue-500 mr-2" /> Built Multiple practice projects.
         </p>
          <p className="text-gray-400 mt-2 flex items-center">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Discovered passion for web development.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned Git & Github workflows.
         </p>
       </motion.div>
 
@@ -120,25 +120,25 @@ function Work() {
         <Rocket className='w-15 h-15 p-2 flex flex-col justify-center items-center align-center bg-gradient-to-r from-gray-500 via-blue-500 to-purple-500  border rounded-md'/>
 
         </span>
-          <span className="bg-gradient-to-r from-blue-500  to-pink-500  bg-clip-text text-transparent text-md flex justify-center">2025 - 2026</span>
-        <h3 className="text-2xl font-semibold ">
-          The Beginning of My Journey
+          <span className="bg-gradient-to-r from-purple-800 to-blue-400 bg-clip-text text-transparent text-md flex justify-center">2025 - 2026</span>
+        <h3 className="text-2xl font-semibold flex justify-center ">
+          Full Stack Journey
         </h3>
 
         <p className="text-gray-400 mt-2">
-         <Sparkles className="inline-block  text-blue-500 mr-2" /> Started BCA Program.
+         <Sparkles className="inline-block  text-blue-500 mr-2" /> Mastered MERN Stack.
         </p>
          <p className="text-gray-400 mt-2">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned C Language fundamentals.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />Built full-stack applications.
         </p>
          <p className="text-gray-400 mt-2">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Learned HTML, CSS, and fundamentals.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />Developed production-ready projects.
         </p>
          <p className="text-gray-400 mt-2">
-           <Sparkles className="inline-block  text-blue-500 mr-2" /> Built first landing page.
+           <Sparkles className="inline-block  text-blue-500 mr-2" /> Learned scalable code architecture.
         </p>
          <p className="text-gray-400 mt-2 flex items-center">
-          <Sparkles className="inline-block  text-blue-500 mr-2" />  Discovered passion for web development.
+          <Sparkles className="inline-block  text-blue-500 mr-2" />Optimized application performance.
         </p>
       </motion.div>
 

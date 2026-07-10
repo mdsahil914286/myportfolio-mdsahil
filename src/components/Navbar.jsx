@@ -8,7 +8,7 @@ const Navbar = () => {
 <div className='container mx-auto flex items-center justify-between'>
   <div >
     <a href='#' className='text-3xl font-bold text-white'>Sahil
-        <span className='text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>  SHAIKH</span>
+        <span className='font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-6xl '>  SHAIKH</span>
         <div className='w-4 h-4 bg-purple-600 rounded-full ml-2'></div>
         </a>
   </div>
