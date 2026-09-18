@@ -6,6 +6,7 @@ import profile from '../components/images/profile.png'
 import resume1 from '../components/images/resume1.png'
 // import {resume }from '../components/resume.pdf'
 // import About from '../components/About'
+import Particles from "./Particles";
 import { useEffect, useRef } from "react";
 import {Download} from 'lucide-react';
 import Typed from "typed.js";
@@ -46,22 +47,36 @@ const Hero =() => {
     transition={{duration: 0.6, ease:'ease-out'}}
     viewport={{once: true}}
     id = 'Home'
-    className='min-h-screen flex items-center pt-2- pb-16 bg-dark-200 '
+     className='min-h-screen flex items-center pt-2- pb-16 bg-dark-200'
+    
     >
-
-         <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
+         <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+        />
+      </div>
+     
+      
+    
+        
+           <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
             {/* left in side content */}
-       <div className='md:w-1/2 md-10 md:md-0 '>
-<h1 className='text-4xl md:text-4xl font-bold '>
-    Hi, I'm <span className=' text-5xl mt-10 text-center md:text-left font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>SAHIL SHAIKH</span>
-</h1>
+        <div className='md:w-1/2 md-10 '>
 
 
 
 
 
 
- <div className="flex items-center justify-center md:justify-start md:items-start mt-20">
+ <div className="flex items-center justify-center md:justify-start md:items-start mt-50">
       <h2 className="text-2xl sm:text-3xl md:text-5xl  font-bold text-white">
         I'm a{" "}
         <span
@@ -114,7 +129,10 @@ box-shadow: var(--shadow-xl);  opacity-100   mt-10 w-64 h-64 md:w-80 md:h-80 obj
 </div>
 
          </div> 
-  
+      
+
+    
+
 
     </motion.div>
   )

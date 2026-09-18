@@ -1,33 +1,63 @@
 
-import {memo} from 'react'
- import Hero from  '../components/Hero'
- import About from '../components/About'
-  import Projects from '../components/Projects'
-    import Skills from '../components/Skills'
-    import Work from '../components/Work'
-   import Contacts from '../components/Contacts'
-import Footer from '../components/Footer'
+// import react from 'react'
+//  import Hero from  '../components/Hero'
+//  import About from '../components/About'
+//   import Projects from '../components/Projects'
+//     import Skills from '../components/Skills'
+//     import Work from '../components/Work'
+//     import Certificates from '../components/Certificates'
+//    import Contacts from '../components/Contacts'
+// import Footer from '../components/Footer'
+// // import Certificates from '../components/Certificates'
 
- export const metadata = {
-  title:"my portfolio md sahil ",
-  description:"creata a website and using react.js and tailwind.css",
- }
 
+ 
+
+
+// const Home = () => {
+//   return (
+//     <div>
+//         <Hero />  
+//         <About />
+//          <Skills /> 
+//         <Projects />
+//         <Work />
+//         <Certificates />
+//          <Contacts /> 
+//          <Footer />
+        
+      
+//     </div>
+//   )
+// }
+
+// export default Home
+
+
+
+
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Work from "../components/Work";
+import Certificates from "../components/Certificates";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
-        <Hero/>  
-        <About/>
-         <Skills/> 
-        <Projects/>
-        <Work/>
-         <Contacts/> 
-         <Footer/>
-        
-      
-    </div>
-  )
-}
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Work />
+      <Certificates />
+      <Contacts />
+      <Footer />
+    </>
+  );
+};
 
-export default memo(Home)
+export default Home;
