@@ -15,18 +15,18 @@ function Work() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: false, amount: 0.2 }}
-  className="py-20 bg-dark-200"
+  className="py-20 bg-transparent"
 >
-  <div className="container mx-auto px-6">
+  <div className="container mx-auto px-4 sm:px-6">
 
-    <h2 className="text-4xl font-bold text-center text-white mb-4">
+    <h2 className="mb-4 text-center text-3xl font-bold text-white sm:text-4xl">
     Development
-      <span className="ml-2 min-w-dvw bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <span className="ml-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         Journey
       </span>
     </h2>
 
-    <p className="text-center text-gray-400 mb-14">
+    <p className="mx-auto mb-14 max-w-4xl text-center text-gray-400">
       From writing my first line of HTML to building Full-Stack applications, my journey in web development has been a thrilling adventure. I've had the privilege of working on diverse projects, each contributing to my growth as a developer. From crafting responsive websites to implementing complex functionalities, I've honed my skills and embraced challenges along the way. 
     </p>
 

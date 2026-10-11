@@ -221,7 +221,6 @@ const Particles = ({
         container.removeChild(gl.canvas);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     particleCount,
     particleSpread,
@@ -230,6 +229,7 @@ const Particles = ({
     particleHoverFactor,
     alphaParticles,
     particleBaseSize,
+    particleColors,
     sizeRandomness,
     cameraDistance,
     disableRotation,

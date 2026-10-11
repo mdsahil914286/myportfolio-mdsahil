@@ -10,7 +10,7 @@ const Skills = () => {
     transition={{duration: 0.9, ease:'ease-out'}}
     viewport={{once: false, amount:0.2}}
     id='Skills'
-    className='py-20 bg-dark-200'
+    className='py-20 bg-transparent'
     >
         <div className='container mx-auto px-6'>
             <h2 className='text-3xl md:text-5xl font-bold mb-4 text-center text-white'>My <span className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>Skills</span></h2>
@@ -19,7 +19,7 @@ const Skills = () => {
                 {/* skill card */}
                 <div className='bg-dark-200 rounded-lg p-6 text-center cursor-pointer transition-transform duration-300 hover:translate-y-2'>
                     <h3 className='text-xl font-semibold mb-4 text-white'>Frontend</h3>
-                    <p className='text-gray-400'>
+                    <div className='text-gray-400'>
                  <div className='flex flex-wrap justify-center gap-6'>
                     <div className='flex flex-col items-center  rounded-lg p-4 
    hover:bg-dark-300 
@@ -97,12 +97,12 @@ const Skills = () => {
                     </div>
                 </div> 
                     
-                </p>
+                </div>
                 </div>
                 {/* skill card */}
                 <div className='bg-dark-200 rounded-lg p-6 text-center cursor-pointer transition-transform duration-300 hover:translate-y-2'>
                     <h3 className='text-xl font-semibold mb-4 text-white'>Backend</h3>
-                    <p className='text-gray-400'>
+                    <div className='text-gray-400'>
                         <div className='flex flex-wrap justify-center gap-6'>
 
                                 <div className='flex flex-col items-center  rounded-lg p-4 hover:bg-dark-300   border-2
@@ -163,12 +163,12 @@ const Skills = () => {
                     </div>
                         </div>
                     
-                        </p>
+                        </div>
                 </div>
                 {/* skill card */}
                 <div className='bg-dark-200 rounded-lg p-6 text-center cursor-pointer transition-transform duration-300 hover:translate-y-2'>
                     <h3 className='text-xl font-semibold mb-4 text-white'>Tools</h3>
-                    <p className='text-gray-400'>
+                    <div className='text-gray-400'>
                          <div className='flex flex-wrap justify-center gap-6'>
                             <div className='flex flex-col items-center rounded-lg p-4 hover:bg-dark-300   border-2
     border-transparent
@@ -227,7 +227,7 @@ const Skills = () => {
                                 <p className='text-grey-400 mt-2 '>Postman</p>
                             </div>
                         </div> 
-                    </p>
+                    </div>
                 </div>
 
 

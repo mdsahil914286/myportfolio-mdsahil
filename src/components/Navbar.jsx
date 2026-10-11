@@ -1,48 +1,90 @@
 import React from 'react'
+import MaskedHeading from './Maskheading'
+import GlassNav from './GlassNav'
+import ThemeToggle from './ThemeToggle'
+import wave from './images/wave.png'
+import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ isDark, onThemeChange }) => {
+  const [showMenu, setShowMenu] = React.useState(false)
+  const links = [
+    ['Home', 'Home'],
+    ['About', 'About'],
+    ['Skills', 'Skills'],
+    ['Projects', 'Projects'],
+    ['Experience', 'experience'],
+    ['Certificates', 'Certificates'],
+    ['Contact', 'Contacts'],
+  ]
 
-    const [showMenu, setShowMenu] = React.useState(false);
   return (
-    <nav className='fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg'>
-<div className='container mx-auto flex items-center justify-between'>
-  <div >
-    <a href='#' className='text-3xl font-bold text-white'>Sahil
-        <span className='font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-6xl '>  SHAIKH</span>
-        <div className='w-4 h-4 bg-purple-600 rounded-full ml-2'></div>
-        </a>
-  </div>
-    <div className='hidden md:flex space-x-10'>
-      <a href='#Home' className='text-white hover:text-purple-500 cursor-pointer  '>Home</a>
-      <a href='#About' className='text-white hover:text-purple-500 cursor-pointer '>About</a>
-        <a href='#Skills' className='text-white hover:text-purple-500 cursor-pointer   '>Skills</a>
-      <a href='#Projects' className='text-white hover:text-purple-500 cursor-pointer  '>Projects</a>
-      <a href='#Contacts' className='text-white hover:text-purple-500 cursor-pointer   '>Contacts</a>
-    </div>
-
-
-
-
-
-</div>
-{/* mobile menu */}
-<div className='md:hidden relative   items-end justify-end flex'>
-    {showMenu ? (
-      <div className='absolute top-16 right-0 bg-dark-100 w-full flex flex-col items-center py-4 space-y-4 '>
-        <a  href='#Home' className='relative text-white hover:text-purple-500 transition duration-500 cursor-pointer '>Home</a>
-        <a href='#About' className='relative text-white hover:text-purple-500 transition duration-500  cursor-pointer '>About</a>
-        <a href='#Projects' className= ' relative text-white hover:text-purple-500 transition duration-500  cursor-pointer '>Projects</a>
-        <a  href='#Skills' className=' relative text-white hover:text-purple-500  transition duration-500 cursor-pointer'>Skills</a>
-        <a  href='#Contacts' className= 'relative text-white hover:text-purple-500  transition duration-500 cursor-pointer'>Contacts</a>
+    <nav className='fixed z-50 w-full px-4 py-3 md:px-6'>
+      <div className='container mx-auto'>
+        <GlassNav className='px-3 py-2 md:px-4'>
+          <div className='flex w-full items-center justify-between gap-4'>
+            <a
+              href='#Home'
+              aria-label='Sahil Shaikh home'
+              className='shrink-0 transition-transform duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-400'
+            >
+              <MaskedHeading
+                text='Sahil Shaikh'
+                src={wave}
+                className='w-full'
+                style={{ width: '10rem' }}
+                textScale={0.08}
+                parallax={6}
+                drift={4}
+                reveal='fade'
+                trigger='mount'
+                align='left'
+                weight={700}
+                tracking={-0.03}
+                lineHeight={1}
+              />
+            </a>
+            <div className='hidden items-center gap-4 lg:flex xl:gap-5'>
+              {links.map(([label, id]) => (
+                <a key={id} href={`#${id}`} className='nav-link text-md'>
+                  {label}
+                </a>
+              ))}
+            </div>
+            <ThemeToggle isDark={isDark} onToggle={onThemeChange} />
+            <div className='relative lg:hidden'>
+              <button
+                type='button'
+                aria-label={showMenu ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-expanded={showMenu}
+                className='cursor-pointer text-white transition-colors hover:text-purple-400 '
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                <svg className='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M4 6h16M4 12h16M4 18h16' />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </GlassNav>
+        {showMenu && (
+          <div className='relative mt-2 lg:hidden'>
+            <GlassNav radius={16} className='p-5'>
+              <div className='flex min-w-48 flex-col items-center gap-4'>
+                {links.map(([label, id]) => (
+                  <a
+                    key={id}
+                    href={`#${id}`}
+                    className='nav-link'
+                    onClick={() => setShowMenu(false)}
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </GlassNav>
+          </div>
+        )}
       </div>
-    ) : null}
-    <button className='text-white focus:outline-none hover:text-purple-500 cursor-pointer  ' onClick={() => setShowMenu(!showMenu)}>
-      <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M4 6h16M4 12h16M4 18h16' />
-      </svg>
-    </button>
-
-</div>
     </nav>
   )
 }

@@ -1,0 +1,54 @@
+.theme-toggle {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 8%);
+  color: var(--color-white, #fff);
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  background: rgb(255 255 255 / 16%);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+.theme-toggle svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.light-theme .theme-toggle {
+  border-color: rgb(30 41 59 / 20%);
+  background: rgb(255 255 255 / 70%);
+  color: #334155;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 10%);
+}
+
+.light-theme .theme-toggle:hover {
+  background: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle {
+    transition: none;
+  }
+}

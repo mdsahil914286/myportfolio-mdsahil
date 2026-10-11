@@ -173,7 +173,7 @@ function Project() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false, amount: 0.2 }}
-      className="py-16 lg:py-20 bg-dark-200"
+      className="py-16 lg:py-20 bg-transparent"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}

@@ -12,18 +12,18 @@ function Footer() {
           transition={{duration: 0.6, ease:'ease-out'}}
           viewport={{once: false, amount:0.2}}
           id = 'Footer'
-    className='  bg-dark-200'
+    className='bg-transparent'
           >
-      <header className='bg-dark-200 py-4 '>
-        <div className='container mx-auto px-6 flex flex-row justify-between gap-8'>
+      <header className='bg-transparent py-4 '>
+        <div className='container mx-auto flex flex-col items-center justify-between gap-4 px-4 text-sm sm:flex-row sm:px-6 sm:text-base'>
 
           
           <p className='text-gray-400 text-center flex-1'>© 2023 My Portfolio <span className='font-bold text-amber-50'>Md Sahil</span>. All rights reserved.</p>
 
         
-            <button className='px-4 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500  rounded-lg text-white font-medium hover:scale-105 transition-transform duration-300 shadow-lg'>
-            <a href='#Home'> <MoveUp />  </a>
-          </button>
+            <a href='#Home' aria-label='Back to top' className='rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-4 py-2 font-medium text-white shadow-lg transition-transform duration-300 hover:scale-105'>
+              <MoveUp aria-hidden='true' />
+            </a>
           
           
         </div>

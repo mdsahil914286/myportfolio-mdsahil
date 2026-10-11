@@ -2,7 +2,7 @@
 // import { motion } from 'framer-motion'
 //    import TiltedCard from './TiltedCard';
 //    import certificates from '../components/images/certificates.png'
-//   import Particles from './Particles';
+//   
 
 
 // function Certificates() {
@@ -84,25 +84,10 @@ function Certificates() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, ease: "ease-out" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="relative min-h-screen overflow-hidden bg-dark-200 py-20"
+      className="relative min-h-screen overflow-hidden bg-transparent py-16 sm:py-20"
     >
-      {/* Particles Background */}
-      <div className="absolute inset-0 z-0">
-        <Particles
-          particleColors={["#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-          pixelRatio={1}
-        />
-      </div>
-
       {/* Main Content */}
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6">
         {/* Heading */}
         <h2 className="mb-4 text-center text-3xl font-bold text-white">
           My{" "}
@@ -119,16 +104,16 @@ function Certificates() {
 
         {/* Certificate Card */}
 
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
 
  <TiltedCard
             imageSrc={certificates}
             altText="Physics Wallah Certificate"
             captionText="Physics Wallah"
-            containerHeight="300px"
-            containerWidth="300px"
-            imageHeight="300px"
-            imageWidth="300px"
+            containerHeight="min(78vw, 300px)"
+            containerWidth="min(100%, 300px)"
+            imageHeight="min(78vw, 300px)"
+            imageWidth="min(78vw, 300px)"
             rotateAmplitude={12}
             scaleOnHover={1.05}
             showMobileWarning={false}
@@ -144,10 +129,10 @@ function Certificates() {
             imageSrc={certificates}
             altText="Physics Wallah Certificate"
             captionText="Physics Wallah"
-            containerHeight="300px"
-            containerWidth="300px"
-            imageHeight="300px"
-            imageWidth="300px"
+            containerHeight="min(78vw, 300px)"
+            containerWidth="min(100%, 300px)"
+            imageHeight="min(78vw, 300px)"
+            imageWidth="min(78vw, 300px)"
             rotateAmplitude={12}
             scaleOnHover={1.05}
             showMobileWarning={false}
@@ -163,10 +148,10 @@ function Certificates() {
             imageSrc={certificates}
             altText="Physics Wallah Certificate"
             captionText="Physics Wallah"
-            containerHeight="300px"
-            containerWidth="300px"
-            imageHeight="300px"
-            imageWidth="300px"
+            containerHeight="min(78vw, 300px)"
+            containerWidth="min(100%, 300px)"
+            imageHeight="min(78vw, 300px)"
+            imageWidth="min(78vw, 300px)"
             rotateAmplitude={12}
             scaleOnHover={1.05}
             showMobileWarning={false}

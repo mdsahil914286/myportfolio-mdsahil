@@ -1,0 +1,30 @@
+.nav-link {
+  color: #fff;
+  background-image: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+  background-position: 100% 50%;
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition:
+    color 250ms ease,
+    background-position 350ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-position: 0% 50%;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
+  }
+}
